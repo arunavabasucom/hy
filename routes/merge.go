@@ -30,6 +30,8 @@ func MergePDFHandler(c *gin.Context) {
 	}
 	filePath1 := filepath.Join(uploadDir, file1.Filename)
 	filePath2 := filepath.Join(uploadDir, file2.Filename)
+	fmt.Println(filePath1)
+	fmt.Println(filePath2)
 	if err := c.SaveUploadedFile(file1, filePath1); err != nil {
 		c.String(http.StatusInternalServerError, fmt.Sprintf("failed to save file1: %v", err))
 		return

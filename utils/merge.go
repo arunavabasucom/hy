@@ -6,7 +6,9 @@ import (
 )
 
 func MergePDFs(outputPath string, inputPaths ...string) error {
-	
+	/*
+	 merge pdfs 
+	*/
 	if len(inputPaths) < 2 {
 		return fmt.Errorf("must provide at least two input PDFs to merge")
 	}
@@ -19,14 +21,3 @@ func MergePDFs(outputPath string, inputPaths ...string) error {
 	return nil
 }
 
-// func main() {
-// 	outputPath := "merged.pdf"
-// 	inputPaths := []string{"input1.pdf", "input2.pdf"}
-
-// 	if err := mergePDFs(outputPath, inputPaths...); err != nil {
-// 		fmt.Fprintf(os.Stderr, "Error merging PDFs: %v\n", err)
-// 		os.Exit(1)
-// 	}
-
-// 	fmt.Println("PDFs merged successfully.")
-// }
