@@ -1,6 +1,7 @@
 ## hy 
 
 
+## Setup 
 
 ```bash 
 # to get the packages
@@ -11,7 +12,7 @@ go run main.go
 
 ```
 
-#### Folder Structure
+## Folder Structure
 
 ```
 .
