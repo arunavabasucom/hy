@@ -1,3 +1,7 @@
+/*
+AUTHOR - Arunava Basu <arunava.basu@arunavabasu.com>
+*/
+
 package main
 
 import (
@@ -9,5 +13,6 @@ import (
 func main() {
 	r := gin.Default()
 	routes.SetupPingRoutes(r)
+	  r.POST("/merge", routes.MergePDFHandler)
 	r.Run()
 }

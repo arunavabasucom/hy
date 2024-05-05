@@ -1,12 +1,11 @@
-package main
+package utils
 
 import (
 	"fmt"
-	"os"
 	pdfcpu "github.com/pdfcpu/pdfcpu/pkg/api"
 )
 
-func mergePDFs(outputPath string, inputPaths ...string) error {
+func MergePDFs(outputPath string, inputPaths ...string) error {
 	
 	if len(inputPaths) < 2 {
 		return fmt.Errorf("must provide at least two input PDFs to merge")
@@ -20,14 +19,14 @@ func mergePDFs(outputPath string, inputPaths ...string) error {
 	return nil
 }
 
-func main() {
-	outputPath := "merged.pdf"
-	inputPaths := []string{"input1.pdf", "input2.pdf"}
+// func main() {
+// 	outputPath := "merged.pdf"
+// 	inputPaths := []string{"input1.pdf", "input2.pdf"}
 
-	if err := mergePDFs(outputPath, inputPaths...); err != nil {
-		fmt.Fprintf(os.Stderr, "Error merging PDFs: %v\n", err)
-		os.Exit(1)
-	}
+// 	if err := mergePDFs(outputPath, inputPaths...); err != nil {
+// 		fmt.Fprintf(os.Stderr, "Error merging PDFs: %v\n", err)
+// 		os.Exit(1)
+// 	}
 
-	fmt.Println("PDFs merged successfully.")
-}
+// 	fmt.Println("PDFs merged successfully.")
+// }
