@@ -22,8 +22,7 @@ func MergePDFHandler(c *gin.Context) {
 		return
 	}
 
-	// Save the uploaded files
-	uploadDir := "uploads"
+	uploadDir := "UPLOADS"
 	if err := os.MkdirAll(uploadDir, 0755); err != nil {
 		c.String(http.StatusInternalServerError, fmt.Sprintf("failed to create upload directory: %v", err))
 		return

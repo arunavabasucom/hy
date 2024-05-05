@@ -11,9 +11,19 @@ go run main.go
 
 ```
 
+#### Folder Structure
 
 ```
-[GIN-debug] GET    /ping                     --> hy/routes.SetupPingRoutes.func1 (3 handlers)
-[GIN-debug] POST   /merge                    --> hy/routes.MergePDFHandler (3 handlers)
+.
+├── LICENSE
+├── README.md
+├── go.mod
+├── go.sum
+├── main.go
+├── routes
+│   ├── merge.go
+│   └── ping.go
+└── utils
+    └── merge.go
 
 ```
