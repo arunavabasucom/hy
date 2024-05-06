@@ -8,7 +8,14 @@
 go get 
 
 # to run server
-go run main.go
+go run main.go 
+
+# clean 
+make clean 
+
+# start server with live reload 
+make watch
+
 
 ```
 
