@@ -21,10 +21,7 @@ go run main.go
 ├── go.mod
 ├── go.sum
 ├── main.go
-├── routes
-│   ├── merge.go
-│   └── ping.go
-└── utils
-    └── merge.go
+├── routes  ## all the routes 
+└── utils   ## all the utils and helper functions
 
 ```
